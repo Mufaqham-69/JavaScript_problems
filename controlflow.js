@@ -6,12 +6,12 @@
 
 
 
- function isEven(num){
-    return(num & 1) === 1;
- }
- console.log(isEven(8));
- console.log(isEven(13));
- console.log(isEven(0));
+//  function isEven(num){
+//     return(num & 1) === 1;
+//  }
+//  console.log(isEven(8));
+//  console.log(isEven(13));
+//  console.log(isEven(0));
 
 // 2. Find Largest of Three Numbers
 // Description: Write a function findLargest(a, b, c) that returns the largest among three numbers using only if–else statements. Testcases:
@@ -49,6 +49,61 @@
 // ● Input: fizzBuzz(5) → Output: [1, 2, "Fizz", 4, "Buzz"]
 // ● Input: fizzBuzz(15) → Output includes "FizzBuzz" at position 15
 // ● Input: fizzBuzz(3) → Output: [1, 2, "Fizz"]
+
+// function fizzBuzz(n){
+   
+//    for (let i = 1; i <= n; i++) {
+      
+//       if(n%3){
+//          console.log("Buzz");
+//       }
+//       else if(n%5) {
+//        console.log("Fizz");
+//       }
+//       else{
+//          console.log(i); 
+//       }
+//    }
+// }
+// fizzBuzz(3);
+
+function fizzBuzz(n){
+    const result = [];
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            result.push("FizzBuzz");
+        } else if (i % 3 === 0) {
+            result.push("Fizz");
+        } else if (i % 5 === 0) {
+            result.push("Buzz");
+        } else {
+            result.push(i);
+        }
+    }
+    return result;
+}
+console.log(fizzBuzz(3)); 
+console.log(fizzBuzz(5)); 
+console.log(fizzBuzz(15)); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
