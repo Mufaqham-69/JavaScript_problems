@@ -51,84 +51,24 @@
 // ● Input: fizzBuzz(3) → Output: [1, 2, "Fizz"]
 
 // function fizzBuzz(n){
-   
+//    const result = [];
 //    for (let i = 1; i <= n; i++) {
       
-//       if(n%3){
-//          console.log("Buzz");
+//       if(i%3==0){
+//          result.push("Buzz");
 //       }
-//       else if(n%5) {
-//        console.log("Fizz");
+//       else if(i%5==0) {
+//        result.push("Fizz");
 //       }
 //       else{
-//          console.log(i); 
+//          result.push(i); 
 //       }
 //    }
+//    return result;
 // }
-// fizzBuzz(3);
-
-function fizzBuzz(n){
-    const result = [];
-    for (let i = 1; i <= n; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            result.push("FizzBuzz");
-        } else if (i % 3 === 0) {
-            result.push("Fizz");
-        } else if (i % 5 === 0) {
-            result.push("Buzz");
-        } else {
-            result.push(i);
-        }
-    }
-    return result;
-}
-console.log(fizzBuzz(3)); 
-console.log(fizzBuzz(5)); 
-console.log(fizzBuzz(15)); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(fizzBuzz(5));
+// console.log(fizzBuzz(15));
+// console.log(fizzBuzz(3));
 
 
 // 4. Reverse a Number
