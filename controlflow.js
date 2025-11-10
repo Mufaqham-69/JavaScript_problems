@@ -78,9 +78,20 @@
 // ● Input: reverseNumber(5) → Output: 5
 
 
+// function reverseNumber(num) {
+//     const sign = num < 0 ? -1 : 1;
+//     num = Math.abs(num);
+//     let reversed = 0;
+//     while (num > 0) {
+//         reversed = reversed * 10 + (num % 10);
+//         num = Math.floor(num / 10);
+//     }
+//     return reversed * sign;
+// }
 
-
-
+// console.log(reverseNumber(1234)); 
+// console.log(reverseNumber(890));  
+// console.log(reverseNumber(5));    
 
 
 
@@ -111,6 +122,19 @@
 // ● Input: countVowels("JAVASCRIPT") → Output: 3
 // ● Input: countVowels("xyz") → Output: 0
 
+// function countVowels(str) {
+//     if (!str) return 0;
+//     const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.has(str[i].toLowerCase())) count++;
+//     }
+//     return count;
+// }
+
+// console.log(countVowels("hello"));      
+// console.log(countVowels("JAVASCRIPT"));
+// console.log(countVowels("xyz"));        
 
 
 
@@ -139,7 +163,22 @@
 // ● Input: digitalRoot(38) → Output: 2
 // ● Input: digitalRoot(5) → Output: 5
 
+// function digitalRoot(num) {
+//     num = Math.abs(Number(num)) || 0;
+//     while (num >= 10) {
+//         let sum = 0;
+//         while (num > 0) {
+//             sum += num % 10;
+//             num = Math.floor(num / 10);
+//         }
+//         num = sum;
+//     }
+//     return num;
+// }
 
+// console.log(digitalRoot(9875)); 
+// console.log(digitalRoot(38));   
+// console.log(digitalRoot(5)); 
 
 
 
@@ -163,7 +202,21 @@
 // ● Input: printPrimes(1) → Output: []
 // ● Input: printPrimes(20) → Output: [2, 3, 5, 7, 11, 13, 17, 19]
 
+function printPrimes(n) {
+    const primes = [];
+    for (let i = 2; i <= n; i++) {
+        let isPrime = true;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) { isPrime = false; break; }
+        }
+        if (isPrime) primes.push(i);
+    }
+    return primes;
+}
 
+console.log(printPrimes(10)); 
+console.log(printPrimes(1));  
+console.log(printPrimes(20));
 
 
 
