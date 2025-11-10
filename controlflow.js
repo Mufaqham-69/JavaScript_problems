@@ -20,23 +20,20 @@
 // ● Input: findLargest(10, 10, 5) → Output: 10
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function findLargest(a,b,c){
+//     if(a>=b&& a>=c){
+//         return a;
+//     }
+//     else if(b>=a && b>=c){
+//         return b;
+//     }
+//     else{
+//         return c;
+//     }
+// }
+// console.log(findLargest (3,7,5));
+// console.log(findLargest (-2,-8,-1));
+// console.log(findLargest (10,10,5));
 
 
 
@@ -93,29 +90,6 @@
 // console.log(reverseNumber(890));  
 // console.log(reverseNumber(5));    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 5. Count Vowels in a String
 // Description: Write a function countVowels(str) that counts the number of vowels (a, e, i, o, u) in a string. Testcases:
 // ● Input: countVowels("hello") → Output: 2
@@ -135,26 +109,6 @@
 // console.log(countVowels("hello"));      
 // console.log(countVowels("JAVASCRIPT"));
 // console.log(countVowels("xyz"));        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // 6. Sum of Digits Until Single Digit
@@ -182,20 +136,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 7. Print Prime Numbers Up to N
 // Description: Write a function printPrimes(n) that returns all prime numbers less than or equal to n. Testcases:
 // ● Input: printPrimes(10) → Output: [2, 3, 5, 7]
@@ -217,18 +157,6 @@
 // console.log(printPrimes(10)); 
 // console.log(printPrimes(1));  
 // console.log(printPrimes(20));
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -255,35 +183,23 @@
 // console.log(isPalindrome(121));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 9. Count Words in a Sentence
 // Description: Write a function countWords(sentence) that counts how many words are in a given string (words separated by spaces). Testcases:
 // ● Input: countWords("Hello world") → Output: 2
 // ● Input: countWords("I love JavaScript very much") → Output: 5
 // ● Input: countWords("") → Output: 0
 
+// function countWords(sentence){
+//     if(sentence.trim( )==="" ){
+//         return 0;
+//     }
 
+//     const words =sentence.trim().split(/\s+/)
+//     return words.length;
+// }
+// console.log(countWords("Hello World"));
+// console.log(countWords("I love JavaScript very much"));
+// console.log(countWords(""));
 
 
 
