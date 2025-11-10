@@ -201,9 +201,174 @@
 // console.log(countWords("I love JavaScript very much"));
 // console.log(countWords(""));
 
+// 10. Factorial Using Loop 
+// Description: 
+// Write a function factorial(n) that calculates the factorial of n using a loop. 
+// Testcases: 
+// ● Input: factorial(5) → Output: 120 
+// ● Input: factorial(0) → Output: 1 
+// ● Input: factorial(3) → Output: 6 
 
 
 
 
+
+
+
+
+
+// 11. Armstrong Number 
+// Description: 
+// Write a function isArmstrong(num) that checks whether a number is an Armstrong number 
+// (sum of its own digits each raised to the power of number of digits equals the number). 
+// Testcases: 
+// ● Input: isArmstrong(153) → Output: true 
+// ● Input: isArmstrong(370) → Output: true 
+// ● Input: isArmstrong(123) → Output: false 
+
+
+
+
+
+
+
+
+
+
+
+// 12. Grade Calculator 
+// Description: 
+// Write a function getGrade(score) that returns the grade based on the score: 
+// 90–100: A, 80–89: B, 70–79: C, 60–69: D, below 60: F 
+// Testcases: 
+// ● Input: getGrade(95) → Output: "A" 
+// ● Input: getGrade(73) → Output: "C" 
+// ● Input: getGrade(50) → Output: "F" 
+ 
+// function getGrade(score){
+//     if(score>=90 && score <=100){
+//         return "A";
+//     }
+//     else if(score>=80 && score <=89){
+//         return"B";
+//     }
+//     else if(score>=70 && score <=79){
+//         return"C";   
+//      }
+//      else if(score>=60&& score <=69){
+//         return"D";
+
+//      }
+//      else{
+//         return"F";
+
+//      }
+//     }
+//     console.log(getGrade(95));
+//     console.log(getGrade(73));
+//     console.log(getGrade(50));
+    
+
+
+
+
+
+
+
+
+
+
+// 13. Print Pattern (Right Triangle) 
+// Description: 
+// Write a function printTriangle(rows) that prints a right triangle of * of given rows. Return 
+// as a string with newline characters. 
+// Testcases: 
+// ● Input: printTriangle(3) → Output: 
+// * 
+// ** 
+// *** 
+// ● Input: printTriangle(1) → Output: "*" 
+// ● Input: printTriangle(5) → Output: 5 lines 
+
+// printTriangle(5)
+// function printTriangle(rows)
+// {
+
+//     let pattern="";
+//     for(let i=1;i<=rows;i++){
+//         for(let j=1;j<=i;j++){
+//             pattern +="*";
+//         }
+//         pattern +="\n";
+//     }
+//     return pattern;
+
+// }
+
+// console.log(printTriangle(3));
+// console.log(printTriangle(1));
+// console.log(printTriangle(15));
+
+
+
+
+
+
+
+// 14. Find GCD (Greatest Common Divisor) 
+// Description: 
+// Write a function findGCD(a, b) that finds the GCD of two numbers using loops and 
+// conditionals (not recursion). 
+// Testcases: 
+// ● Input: findGCD(12, 18) → Output: 6 
+// ● Input: findGCD(100, 25) → Output: 25 
+// ● Input: findGCD(7, 3) → Output: 1 
+
+// function findGCD(a,b){
+//     let gcd=1;
+//     let min = a<b ? a:b;
+//     for(let i=1; i<=min;i++){
+//         if(a%i===0 && b%i===0){
+//             gcd=i;
+
+//         }
+
+//     }
+//     return gcd;
+// }
+// console.log(findGCD(12,18));
+// console.log(findGCD(100,25));
+// console.log(findGCD(7,3));
+
+
+
+
+
+
+
+// 15. Leap Year Checker 
+// Description: 
+// Write a function isLeapYear(year) that checks if a given year is a leap year. 
+// Testcases: 
+// ● Input: isLeapYear(2020) → Output: true 
+// ● Input: isLeapYear(1900) → Output: false 
+// ● Input: isLeapYear(2000) → Output: true
+
+
+// function isLeapYear(year){
+//     if((year % 4===0 && year % 100 )){
+//         return true;
+//     }
+//     else if (year %400 ===0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+
+// }
+// console.log( isLeapYear(2020));
+// console.log( isLeapYear(1900));
+// console.log( isLeapYear(2000));
 
 
