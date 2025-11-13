@@ -209,8 +209,17 @@
 // ● Input: factorial(0) → Output: 1 
 // ● Input: factorial(3) → Output: 6 
 
-
-
+// function factorial(n){
+//     let fact=1;
+//     for(let i=1;i<=n;i++){
+//         fact *=i;
+//     }
+//     return fact;
+// }
+// console.log(factorial(5));
+// console.log(factorial(0));
+// console.log(factorial(12));
+// console.log(factorial(8));
 
 
 
@@ -226,6 +235,21 @@
 // ● Input: isArmstrong(370) → Output: true 
 // ● Input: isArmstrong(123) → Output: false 
 
+// function isArmstrong(num){
+//     const strnum=num.toString();
+//     const n=strnum.length;
+//     let sum=0;
+
+//     for(let i=0;i<n;i++){
+//         const digit = parseInt(strnum[i]);
+//         sum += Math.pow(digit,n);
+//     }
+//     return sum === num;
+// }
+
+// console.log(isArmstrong(153));
+// console.log(isArmstrong(370));
+// console.log(isArmstrong(123));
 
 
 
@@ -233,17 +257,14 @@
 
 
 
-
-
-
-// 12. Grade Calculator 
+// 12. Grade Calc// ulator 
 // Description: 
-// Write a function getGrade(score) that returns the grade based on the score: 
+// Write a function // getGrade(score) that returns the grad// e based on the score: 
 // 90–100: A, 80–89: B, 70–79: C, 60–69: D, below 60: F 
-// Testcases: 
-// ● Input: getGrade(95) → Output: "A" 
-// ● Input: getGrade(73) → Output: "C" 
-// ● Input: getGrade(50) → Output: "F" 
+// Testcases: // 
+// ● Input: getGrade(95// ) →//  Output: "A" 
+// ● Input: getGr// ade(73) → Output: "C" 
+// ● Inp// ut: getGrade(50) → Output: "F" 
  
 // function getGrade(score){
 //     if(score>=90 && score <=100){
