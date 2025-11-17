@@ -5,11 +5,18 @@
 // Testcase 2: [10, 11, 13, 14] → 12 
 // Testcase 3: [100, 101, 102, 104] → 103 
 
+// function findMissingNumber(arr) {
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         if(arr[i + 1] - arr[i] !== 1) {
+//             return arr[i] + 1;
+//         }
+//     }
+//     return null; 
+// }   
 
-
-
-
-
+// console.log(findMissingNumber([1, 2, 4, 5]));
+// console.log(findMissingNumber([10, 11, 13, 14])); 
+// console.log(findMissingNumber([100, 101, 102, 104])); 
 
 
 
@@ -19,7 +26,20 @@
 // Testcase 2: ([3, 5, 9], 10) → false 
 // Testcase 3: ([0, -1, 1], 0) → true 
 
+// function hasPairWithSum(arr, target) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] + arr[j] === target) {
+//                 return true;
+//             }
+//         }
+//     }
+//     return false;
+// }   
 
+// console.log(hasPairWithSum([1, 2, 4, 7], 6)); 
+// console.log(hasPairWithSum([3, 5, 9], 10)); 
+// console.log(hasPairWithSum([0, -1, 1], 0)); 
 
 
 
@@ -35,7 +55,24 @@
 
 
 
+// function moveZerosToEnd(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length - 1 - i; j++) {
+//             if (arr[j] === 0) {
+            
+//                 let temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
 
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(moveZerosToEnd([0, 1, 0, 3, 12])); 
+// console.log(moveZerosToEnd([1, 0, 2, 0, 0])); 
+// console.log(moveZerosToEnd([0, 0, 0])); 
 
 
 
