@@ -142,7 +142,16 @@
 // Testcase 3: ([1, 2, 3, 4], 3) → [[1, 2, 3], [4]] 
 
 
+// function chunkArray(arr, size) {
+//     for (let i = 0; i < arr.length; i += size) {
+//         let chunk = arr.slice(i, i + size);
+//         console.log(chunk);
+//     }
+// }   
 
+// console.log(chunkArray([1, 2, 3, 4, 5], 2)); 
+// console.log(chunkArray([1, 2, 3], 1)); 
+// console.log(chunkArray([1, 2, 3, 4], 3));       
 
 
 
