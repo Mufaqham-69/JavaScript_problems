@@ -167,12 +167,19 @@
 // Testcase 3: ([1, 2], 5) → [2, 1]
 
 
+// function rotateArray(arr, k) {
+//     for (let i = 0; i < arr.length; i++) {
+//  if (i < k) {   
+//     }
+//     k = k % arr.length; 
+//     let rotated = arr.slice(-k).concat(arr.slice(0, arr.length - k)); 
+//     return rotated; 
+// }
+// }       
 
-
-
-
-
-
+// console.log(rotateArray([1, 2, 3, 4, 5], 2));                  
+// console.log(rotateArray([10, 20, 30], 1));           
+// console.log(rotateArray([1, 2], 5));           
 
 
 
@@ -184,8 +191,24 @@
 // Testcase 2: [1, 1, 2, 1] → 1 
 // Testcase 3: [10, 20, 30] → null 
 
+// function findMajorityElement(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let count = 0;
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[i] === arr[j]) {
+//                 count++;
+//             }           
+//             if (count > arr.length / 2) {
+//                 return arr[i];
+//             }
+//         }
+//     }
+//     return null; 
+// }
 
-
+// console.log(findMajorityElement([3, 3, 4, 2, 3, 3, 5])); 
+// console.log(findMajorityElement([1, 1, 2, 1])); 
+// console.log(findMajorityElement([10, 20, 30]));
 
 
 
