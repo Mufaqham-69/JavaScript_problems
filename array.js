@@ -89,7 +89,19 @@
 // Testcase 2: ([5, 5, 6], [6, 6, 5]) → [5, 6] 
 // Testcase 3: ([10, 20], [30, 40]) → [] 
 
+// function intersectionWithoutDuplicates(arr1, arr2) {
+//     let result = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
+//             result.push(arr1[i]);
+//         }
+//     }
+//     return result;
+// }
 
+// console.log(intersectionWithoutDuplicates([1, 2, 2, 3], [2, 3, 4])); 
+// console.log(intersectionWithoutDuplicates([5, 5, 6], [6, 6, 5])); 
+// console.log(intersectionWithoutDuplicates([10, 20], [30, 40]));     
 
 
 
@@ -111,8 +123,27 @@
 
 
 
+// function findLongestConsecutiveSequence(arr) {
+//     let i=0;
+//     let maxLength = 0;
+//     while (i < arr.length) {
+//         let currentNum = arr[i];
+//         let currentLength = 1;
+//         while (arr.includes(currentNum + 1)) {
+//             currentNum++;
+//             currentLength++;
+//         }
+//         if (currentLength > maxLength) {
+//             maxLength = currentLength;
+//         }
+//         i++;
+//     }
+//     return maxLength;
+// }   
 
-
+// console.log(findLongestConsecutiveSequence([100, 4, 200, 1, 3, 2])); 
+// console.log(findLongestConsecutiveSequence([10, 5, 11, 12, 13])); 
+// console.log(findLongestConsecutiveSequence([1, 2, 2, 3]));
 
 
 
@@ -126,8 +157,21 @@
 // Testcase 3: [1, 2, 3] → [1, 2, 3] 
 
 
+// function flattenArray(arr) {    
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (Array.isArray(arr[i])) {
+//             result = result.concat(flattenArray(arr[i]));
+//         } else {
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
 
-
+// console.log(flattenArray([1, [2, 3], [4, [5]]])); 
+// console.log(flattenArray([[1], [2, [3, [4]]]])); 
+// console.log(flattenArray([1, 2, 3]));   
 
 
 
@@ -218,6 +262,15 @@
 // Testcase 2: ([10, 20, 30, 40], 1) → 40 
 // Testcase 3: ([5, 5, 5, 5], 3) → 5 
 
+// function findKthLargest(arr, k) {
+//     arr.sort((a, b) => b - a); 
+//     return arr[k - 1];
+// }
+
+// console.log(findKthLargest([3, 2, 1, 5, 6, 4], 2)); 
+// console.log(findKthLargest([10, 20, 30, 40], 1)); 
+// console.log(findKthLargest([5, 5, 5, 5], 3));   
+
 
 
 
@@ -227,7 +280,34 @@
 // Testcase 2: [-1, -2, -3, 4, 5, 6] → [4, -1, 5, -2, 6, -3] 
 // Testcase 3: [1, 2, 3, -1, -2, -3] → [1, -1, 2, -2, 3, -3] 
 
+// function rearrangePosNeg(arr) {
+//     let pos = [];
+//     let neg = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] >= 0) {
+//             pos.push(arr[i]);
+//         } else {
+//             neg.push(arr[i]);
+//         }
+//     }
+//     let result = [];
+//     let i = 0, j = 0;
+//     while (i < pos.length || j < neg.length) {
+//         if (i < pos.length) {
+//             result.push(pos[i]);
+//             i++;
+//         }
+//         if (j < neg.length) {
+//             result.push(neg[j]);
+//             j++;
+//         }
+//     }       
+//     return result;
+// }
 
+// console.log(rearrangePosNeg([1, -2, 3, -4, 5])); 
+// console.log(rearrangePosNeg([-1, -2, -3, 4, 5, 6])); 
+// console.log(rearrangePosNeg([1, 2, 3, -1, -2, -3]));    
 
 
 
@@ -262,4 +342,22 @@
 // Return an array where each element is the product of all elements except itself. 
 // Testcase 1: [1, 2, 3, 4] → [24, 12, 8, 6] 
 // Testcase 2: [2, 3, 4, 5] → [60, 40, 30, 24] 
-// Testcase 3: [10, 0, 5] → [0, 50, 0]
+// // Testcase 3: [10, 0, 5] → [0, 50, 0]
+
+// function productExceptSelf(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let product = 1;
+//         for (let j = 0; j < arr.length; j++) {
+//             if (i !== j) {
+//                 product *= arr[j];
+//             }
+//         }
+//         result.push(product);
+//     }
+//     return result;
+// }
+
+// console.log(productExceptSelf([1, 2, 3, 4])); 
+// console.log(productExceptSelf([2, 3, 4, 5])); 
+// console.log(productExceptSelf([10, 0, 5])); 
